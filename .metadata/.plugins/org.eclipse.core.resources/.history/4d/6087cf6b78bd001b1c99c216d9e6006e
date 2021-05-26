@@ -1,0 +1,10 @@
+package chap6;
+import java.util.*;
+
+public class Exercise02 {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String s = new scanner.next();
+		StringTokenizer st = 
+	}
+}

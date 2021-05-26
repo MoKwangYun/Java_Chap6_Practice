@@ -1,0 +1,24 @@
+package chap6;
+import java.util.*;
+
+public class Exercise02 {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String s =  scanner.nextLine();
+		s = s.trim();
+		s = s.concat("7");
+		System.out.println(s);
+		StringTokenizer st = new StringTokenizer(s, "+ ");
+		
+		double n = st.countTokens();
+		int sum = 0;
+		while(st.hasMoreTokens()) {
+			String token = st.nextToken();
+			System.out.println(token);
+			int i = Integer.parseInt(token);
+			sum += i;
+		}
+		
+		System.out.println("Че=" + sum + ", ЦђБе=" + sum/n);
+	}
+}

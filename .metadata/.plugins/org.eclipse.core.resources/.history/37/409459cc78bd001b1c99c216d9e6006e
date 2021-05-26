@@ -1,0 +1,21 @@
+package chap6;
+import java.util.*;
+
+public class Exercise02 {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String s =  scanner.next();
+		s = s.trim();
+		StringTokenizer st = new StringTokenizer(s, "+");
+		
+		double n = st.countTokens();
+		int sum = 0;
+		while(st.hasMoreTokens()) {
+			String token = st.nextToken();
+			int i = Integer.parseInt(token);
+			sum += i;
+		}
+		
+		System.out.println("Че=" + sum + "ЦђБе=" + sum/n);
+	}
+}
